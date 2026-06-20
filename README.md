@@ -15,18 +15,22 @@ https://www.kaggle.com/datasets/forderation/breakhis-400x
 After downloading, the folder structure should look like:
 BreaKHis 400X/
 
+```
 ├── train/
 │   ├── benign/
 │   └── malignant/
 └── test/
 │   ├── benign/
 │   └── malignant/
+```
 
 ## Project Structure
+```
 ├── app.py                            # Streamlit UI
 ├── model_utils.py                    # shared model functions
 ├── best_pretrained_v4.pth            # not included - download from Training section
 └── best_scratch_v4.pth               # not included - download from Training section
+```
 
 ## Training
 
