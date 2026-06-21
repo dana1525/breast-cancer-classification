@@ -12,10 +12,9 @@ https://www.kaggle.com/code/danamirescu/breast-cancer-classification-v1
 The dataset used is BreaKHis 400X:
 https://www.kaggle.com/datasets/forderation/breakhis-400x
 
-After downloading, the folder structure should look like:
-BreaKHis 400X/
-
+The folder structure should look like this:
 ```
+BreaKHis 400X/
 ├── train/
 │   ├── benign/
 │   └── malignant/
@@ -35,18 +34,18 @@ BreaKHis 400X/
 ## Training
 
 **Option 1: Train from scratch (Kaggle)**
-Open the notebook in Kaggle and run all cells.
-GPU is recommended — enable it in Settings → Accelerator → GPU T4.
+Open the notebook in Kaggle and run all cells, except the one loading the models.
+GPU is recommended — enable it in Settings -> Accelerator -> GPU T4.
 
 **Option 2: Load pretrained weights (Kaggle)**
 Open the notebook in Kaggle, attach the following datasets, set `KAGGLE = True`
-at the top of the notebook, and skip to the evaluation cells.
+at the top of the notebook. Skip the training cell.
 - Models: https://www.kaggle.com/models/danamirescu/version4
 - Loss history: https://www.kaggle.com/models/danamirescu/loss-history
 
 **Option 3: Load pretrained weights (local)**
 Download the files from the links above, place them in the root folder,
-set `KAGGLE = False` at the top of the notebook, and skip to the evaluation cells.
+set `KAGGLE = False` at the top of the notebook. Skip the training cell.
 
 ## Running the App
 
@@ -59,8 +58,3 @@ Run:
 ```bash
 streamlit run app.py
 ```
-
-## References
-
-- GradCAM: https://arxiv.org/abs/1610.02391
-- Dataset: https://www.kaggle.com/datasets/forderation/breakhis-400x
